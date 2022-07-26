@@ -20,8 +20,8 @@ markup:
 Menus:
   main:
     - identifier: blog
-      name: Portfolio
-      title: Portfolio
+      name: Personal site
+      title: Personal site
       url: /blogs
       weight: 1
 
@@ -44,8 +44,8 @@ Menus:
     #  weight: 2
 
 params:
-  title: "Valentina's Portfolio"
-  description: Text about my cool site
+  title: "Valentina's Personal site"
+  description: Personal site
   #staticPath: ""  # The path to serve the static files from
   favicon: "/fav.png"
 
@@ -82,13 +82,13 @@ params:
   #   brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
   #   brandName: "Profile" # Brand name for the brand | default is the title variable
 
-  #   menus:
-  #     disableAbout: true
+   menus:
+     disableAbout: true
   #     disableExperience: true
-  #     disableEducation: true
-  #     disableProjects: true
+     disableEducation: true
+     disableProjects: true
   #     disableAchievements: true
-  #     disableContact: true
+     disableContact: true
 
   # Hero
   hero:
