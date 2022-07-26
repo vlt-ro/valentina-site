@@ -20,8 +20,8 @@ markup:
 Menus:
   main:
     - identifier: blog
-      name: Portfolio
-      title: Portfolio
+      name: Personal site
+      title: Personal site
       url: /blogs
       weight: 1
 
@@ -44,7 +44,7 @@ Menus:
     #  weight: 2
 
 params:
-  title: "Valentina's Portfolio"
+  title: "Valentina's Personal site"
   description: Text about my cool site
   #staticPath: ""  # The path to serve the static files from
   favicon: "/fav.png"

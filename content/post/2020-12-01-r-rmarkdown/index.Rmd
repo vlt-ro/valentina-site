@@ -1,9 +1,9 @@
 ---
-title: "Hello R Markdown"
-author: "Frida Gomam"
-date: 2020-12-01T21:13:14-05:00
+title: "Personal site"
+author: "Valentina Roquemen-Echeverri"
+date: 2022-07-26T21:13:14-05:00
 categories: ["R"]
-tags: ["R Markdown", "plot", "regression"]
+tags: ["Valentina Roquemen", "Valentina Roquemen-Echeverri", "Personal site"]
 ---
 
 ```{r setup, include=FALSE}
