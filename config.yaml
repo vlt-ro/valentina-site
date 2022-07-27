@@ -45,7 +45,11 @@ Menus:
 
 params:
   title: "Valentina's Personal site"
+<<<<<<< HEAD
   description: Personal site
+=======
+  description: Text about my cool site
+>>>>>>> 1243eba23d26e046b8d0871d54652bee8b3f3899
   #staticPath: ""  # The path to serve the static files from
   favicon: "/fav.png"
 
