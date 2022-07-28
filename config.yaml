@@ -120,24 +120,23 @@ params:
     enable: true
     title: "About Me"
     url: '#about'
-    image: "/images/me.png"
+    image: /images/AboutMe.jpg
     content: |-
-      I am a graduate student in the Artificial Intelligence for Medical Systems Lab in the Department of Biomedical Engineering at OHSU. Currently, I am involved in two research projects: heart sound and murmur detection using phonocardiograms, and nocturnal hypoglycemia prediction.
+      I am a graduate student in the [Artificial Intelligence for Medical Systems Lab](https://www.ohsu.edu/school-of-medicine/jacobs-lab) in the Department of Biomedical Engineering at OHSU. Currently, I am involved in two research projects: heart sound and murmur detection using phonocardiograms, and nocturnal hypoglycemia prediction.
 
       During my Bachelor's degree in Physics, I focused on learning machine learning and data science. Thus, I became passionate about data, which includes visualization, ETL (Extract, transform, load), and modeling. 
 
       As a Latin American Woman, I feel lucky to be where I am. However, I also feel a great responsibility to turn science into a multicultural space, reducing the gap between those who have access to it.
     
     skills:
-      enable: false
-      title: "Here are a few technologies I've been working with recently:"
+      enable: true
+      title: "Here are some programming languages I've been working on:"
       items:
-        - "HTML"
-        - "CSS"
-        - "JavaScript"
-        - "React"
-        - "Node"
-        - "Express"
+        - "Python"
+        - "C"
+        - "C++"
+        - "R"
+        - "CUDA C"
 
   # Experience
   experience:
