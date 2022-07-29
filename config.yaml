@@ -98,9 +98,9 @@ params:
     content: "I am a BME graduate student at OHSU."
     image: /images/me.jpg
     button:
-      enable: false
+      enable: true
       name: "Resume"
-      url: "#"
+      url: "/Documents/CV_ValentinaRoquemen.pdf"
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
@@ -120,7 +120,7 @@ params:
     url: '#about'
     image: /images/AboutMe.jpg
     content: |-
-      I am a graduate student in the Artificial Intelligence for Medical Systems [AIMS](https://www.ohsu.edu/school-of-medicine/jacobs-lab) Lab in the Department of Biomedical Engineering at OHSU. Currently, I am involved in two research projects: heart sound and murmur detection using phonocardiograms, and nocturnal hypoglycemia prediction.
+      I am a graduate student in the Artificial Intelligence for Medical Systems [(AIMS)](https://www.ohsu.edu/school-of-medicine/jacobs-lab) Lab in the Department of Biomedical Engineering at OHSU. Currently, I am involved in two research projects: heart sound and murmur detection using phonocardiograms, and nocturnal hypoglycemia prediction.
 
       During my Bachelor's degree in Physics, I focused on learning machine learning and data science. Thus, I became passionate about data, which includes visualization, ETL (Extract, transform, load), and modeling. 
 
@@ -202,7 +202,7 @@ params:
   # Education
   education:
     enable: true
-    # index: true
+    index: true
     items:
       - title: "Doctor of Philosophy in Biomedical Engenieering "
         school:
@@ -210,10 +210,12 @@ params:
           url: "https://www.ohsu.edu/"
         date: "Spring 2022 - In progress"
         #GPA: "3.8 out of 5.0"
-        #content: |-
-        #  Extracurricular Activities
-        #    - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        #    - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
+        content: |
+          ##### Advisors:
+            - ###### [Dr. Clara Mosquera-López](https://clara.mosqueralopez.com)
+            - ###### [Dr. Peter Jacobs](https://www.ohsu.edu/people/peter-g-jacobs-phd)
+          
+        
       - title: "Bachelor of Science in Physics"
         school:
           name: "Universidad de Antioquia, Colombia"
@@ -298,8 +300,8 @@ params:
   #Contact
   contact:
     enable: true
-    content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
-    email: temporary_email@email.com
+    content: My inbox is always open. I’ll try my best to get back to you!
+    email: valentina.roquemen@udea.edu.co
     btnName: Mail me
 
   footer:
