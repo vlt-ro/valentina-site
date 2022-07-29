@@ -18,12 +18,12 @@ markup:
       unsafe: true
 
 Menus:
-  main:
-    - identifier: blog
-      name: Personal site
-      title: Personal site
-      url: /blogs
-      weight: 1
+    main:
+      - identifier: News
+        name: News
+        title: News
+        url: "/news"
+        weight: 1
 
     #Dropdown menu
     #- identifier: dropdown
@@ -44,14 +44,14 @@ Menus:
     #  weight: 2
 
 params:
-  title: "Valentina's Personal site"
+  title: "Valentina Roquemen Echeverri"
   description: Personal site
   #staticPath: ""  # The path to serve the static files from
   favicon: "/fav.png"
 
   theme:
     disableThemeToggle: false
-    defaultTheme: "light" # dark
+    defaultTheme: "dark" # dark, light
 
   font:
      fontSize: 1.2rem # default: 1rem
@@ -60,21 +60,19 @@ params:
      textAlign: left # default: left
 
   # color preference
-  #color:
-  #   textColor:
-  #   secondaryTextColor:
-  #   backgroundColor:
-  #   secondaryBackgroundColor:
-  #   primaryColor:
-  #   secondaryColor:
+  color:
+      textColor: 
+      secondaryTextColor: 
+      backgroundColor: 
+      primaryColor: 
+      secondaryColor: 
 
-  #   darkmode:
-  #     textColor:
-  #     secondaryTextColor:
-  #     backgroundColor:
-  #     secondaryBackgroundColor:
-  #     primaryColor:
-  #     secondaryColor:
+      darkmode:
+        textColor: "#F5F5F5"
+        secondaryTextColor: "#F5F5F5"
+        backgroundColor: "#313552"
+        primaryColor: "#F1E0AC"
+        secondaryColor: "#30475E"
 
   # If you want to customize the menu, you can change it here
   # navbar:
@@ -83,8 +81,8 @@ params:
   #   brandName: "Profile" # Brand name for the brand | default is the title variable
 
 
-  #   menus:
-  #     disableAbout: false
+  #    menus:
+  #     enableAbout: false
   #     disableExperience: true
   #     disableEducation: true
   #     disableProjects: true
@@ -122,7 +120,7 @@ params:
     url: '#about'
     image: /images/AboutMe.jpg
     content: |-
-      I am a graduate student in the [Artificial Intelligence for Medical Systems Lab](https://www.ohsu.edu/school-of-medicine/jacobs-lab) in the Department of Biomedical Engineering at OHSU. Currently, I am involved in two research projects: heart sound and murmur detection using phonocardiograms, and nocturnal hypoglycemia prediction.
+      I am a graduate student in the Artificial Intelligence for Medical Systems [AIMS](https://www.ohsu.edu/school-of-medicine/jacobs-lab) Lab in the Department of Biomedical Engineering at OHSU. Currently, I am involved in two research projects: heart sound and murmur detection using phonocardiograms, and nocturnal hypoglycemia prediction.
 
       During my Bachelor's degree in Physics, I focused on learning machine learning and data science. Thus, I became passionate about data, which includes visualization, ETL (Extract, transform, load), and modeling. 
 
@@ -131,12 +129,11 @@ params:
     skills:
       enable: true
       title: "Here are some programming languages I've been working on:"
+      url: '#Skills'
       items:
         - "Python"
-        - "C"
-        - "C++"
+        - "C/C++"
         - "R"
-        - "CUDA C"
 
   # Experience
   experience:
@@ -300,13 +297,13 @@ params:
 
   #Contact
   contact:
-    enable: false
+    enable: true
     content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
-    email: gurusabarisha@gmail.com
+    email: temporary_email@email.com
     btnName: Mail me
 
-  #footer:
-  #   recentPosts: false
+  footer:
+    recentPosts: false
   #  socialNetworks:
   #    github: https://github.com
   #    linkedin: https://linkedin.com

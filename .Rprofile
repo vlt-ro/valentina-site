@@ -20,7 +20,7 @@ options(
   #blogdown.method = 'html'
   blogdown.author = "Valentina Roquemen Echeverri",
   blogdown.ext = ".Rmarkdown",
-  blogdown.subdir = "post"
+  blogdown.subdir = "news"
 )
 
 # fix Hugo version
