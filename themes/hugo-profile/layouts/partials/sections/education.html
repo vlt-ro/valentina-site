@@ -44,6 +44,32 @@
                                 </div>
                                 {{ end }}
                                 <div class="py-1 education-content">
+                                  Advisors:
+                                  {{ range $advisor_index, $advisor_element := .advisor }}
+                                  {{ if .advisor_url }}
+                                  <a href="{{ .advisor_url }}" target="_blank">
+                                      <h6 class="education-content">
+                                      {{ .advisor_name }}
+                                      </h6>
+                                  </a>
+                                  {{ else }}
+                                  {{ .advisor_name }}
+                                  {{ end }}
+                                  {{ end }}
+                                </div>
+                                
+                                {{ if .thesis }}
+                                  <div class="py-1 education-content">
+                                      {{ .thesis.type}}: 
+                                      <a href="{{ .thesis.url }}" target="_blank">
+                                          <h6 class="education-content">
+                                          {{ .thesis.name }}
+                                          </h6>
+                                      </a>
+                                  </div>
+                                {{ end }}
+                                
+                                <div class="py-1 education-content">
                                     {{ .content | markdownify}}
                                 </div>
 
