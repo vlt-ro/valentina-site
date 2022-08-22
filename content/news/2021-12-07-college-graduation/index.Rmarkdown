@@ -3,7 +3,7 @@ title: College graduation
 author: Valentina Roquemen Echeverri
 date: '2021-12-07'
 slug: []
-categories: ["news", "post", "graduation", "CV"]
+categories: ["news", "post", "CV", "graduation"]
 tags: []
 image: ~
 description: ~
