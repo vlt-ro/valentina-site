@@ -3,9 +3,19 @@ languageCode: "en-us"
 title: "Hugo Profile"
 theme: hugo-profile
 
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
 Paginate: 3
-disqusShortname: gurusabarish
-googleAnalytics: G-DWJJVE27WD
+enableRobotsTXT: true
+# disqusShortname: your-disqus-shortname
+# googleAnalytics: G-MEASUREMENT_ID
 
 markup:
   goldmark:
@@ -19,13 +29,11 @@ Menus:
       title: Blog posts
       url: /blogs
       weight: 1
-    
     - identifier: gallery
       name: Gallery
       title: Blog posts
       url: /gallery
       weight: 2
-
     #Dropdown menu
     # - identifier: dropdown
     #   title: Example dropdown menu
@@ -55,46 +63,64 @@ params:
   # Note the lack of "" in true, it should be of boolean type.
   useBootstrapCDN: false
 
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+
+  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
+  mathjax: false
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
   theme:
-    disableThemeToggle: false
+    # disableThemeToggle: true
     # defaultTheme: "light" # dark
 
-  # font:
-  #   fontSize: 1.5rem # default: 1rem
-  #   fontWeight: 500 # default: 400
-  #   lineHeight: 1 # default: 1.5
-  #   textAlign: right # default: left
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
 
   # color preference
+  # When using hex codes for colors, quotations must be used along with the # sign
   # color:
-  #   textColor:
-  #   secondaryTextColor:
-  #   backgroundColor:
-  #   secondaryBackgroundColor:
-  #   primaryColor:
-  #   secondaryColor:
+  #   textColor: "#343a40"
+  #   secondaryTextColor: "#6c757d"
+  #   backgroundColor: "#eaedf0"
+  #   secondaryBackgroundColor: "#64ffda1a"
+  #   primaryColor: "#007bff"
+  #   secondaryColor: "#f8f9fa"
 
   #   darkmode:
-  #     textColor:
-  #     secondaryTextColor:
-  #     backgroundColor:
-  #     secondaryBackgroundColor:
-  #     primaryColor:
-  #     secondaryColor:
+  #     textColor: "#e4e6eb"
+  #     secondaryTextColor: "#b0b3b8"
+  #     backgroundColor: "#18191a"
+  #     secondaryBackgroundColor: "#212529"
+  #     primaryColor: "#ffffff"
+  #     secondaryColor: "#212529"
 
   # If you want to customize the menu, you can change it here
-  # navbar:
-  #   align: mx-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
-  #   brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
-  #   brandName: "Profile" # Brand name for the brand | default is the title variable
-
-  #   menus:
-  #     disableAbout: true
-  #     disableExperience: true
-  #     disableEducation: true
-  #     disableProjects: true
-  #     disableAchievements: true
-  #     disableContact: true
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    # showBrandLogo: false # Show brand logo in nav bar | default is true
+    brandName: "Hugo Profile" # Brand name for the brand | default is the title variable
+    disableSearch: false
+    # searchPlaceholder: "Search"
+    stickyNavBar:
+      enable : true
+      showOnScrollUp : true
+    enableSeparator: false
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
 
   # Hero
   hero:
@@ -104,15 +130,20 @@ params:
     subtitle: "I build things for the web"
     content: "A passionate web app developer. I tend to make use of modern web technologies to build websites that looks great, feels fantastic, and functions correctly."
     image: /images/hero.svg
+    bottomImage:
+      enable: true
+    # roundImage: true # Make hero image circular | default false
     button:
       enable: true
       name: "Resume"
       url: "#"
+      download: true
+      newPage: false
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
           url: https://example.com
-        - icon: fab fa-twitter
+        - icon: fab fa-x-twitter
           url: https://example.com
       customIcons:
         - icon: /fav.png
@@ -124,7 +155,7 @@ params:
     title: "About Me"
     image: "/images/me.png"
     content: |-
-      I am a software developer with a passion for web development. I have a background in computer science and mathematics, and I have a strong interest in the intersection of technology and art. I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. 
+      I am a software developer with a passion for web development. I have a background in computer science and mathematics, and I have a strong interest in the intersection of technology and art. I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA.
 
       I am currently working on a project that will be used to help people find the best way to get around the city.
     skills:
@@ -141,6 +172,7 @@ params:
   # Experience
   experience:
     enable: true
+    # title: "Custom Name"
     items:
       - job: "Senior Software Developer"
         company: "Facebook"
@@ -205,7 +237,8 @@ params:
   # Education
   education:
     enable: true
-    # index: true
+    # title: "Custom Name"
+    index: false
     items:
       - title: "Master of Business Administration"
         school:
@@ -215,7 +248,7 @@ params:
         GPA: "3.8 out of 5.0"
         content: |-
           Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            - Lorem ipsum dolor sit amet consectetur adipisicing elit.
             - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
       - title: "Bachelor of Science in Computer Science"
         school:
@@ -229,7 +262,7 @@ params:
           - Face mask detection using a single convolutional neural network.
 
           Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            - Lorem ipsum dolor sit amet consectetur adipisicing elit.
             - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
         featuredLink:
           enable: true
@@ -247,15 +280,19 @@ params:
   # Achievements
   achievements:
     enable: true
+    # title: "Custom Name"
     items:
       - title: Google kickstart runner
         content: I solved all problems with optimal solution.
         url: https://example.com
+        image: /images/achievment.jpg
       - title: Facebook Hackathon Winner
         content: Developed a product using Artificial Intelligence.
+        image: /images/achievment.jpg
       - title: Hugo Profile
         content: Developed a theme and getting 1K+ downloads per month.
         url: "https://github.com/gurusabarish/hugo-profile"
+        image: /images/achievment.jpg
       - title: Microsoft Imagine Runner
         content: We are developed a product which can help others.
       - title: Google Summer of Code
@@ -265,6 +302,7 @@ params:
   # projects
   projects:
     enable: true
+    # title: "Custom Name"
     items:
       - title: Hugo Profile
         content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
@@ -272,10 +310,10 @@ params:
         featured:
           name: Demo
           link: https://hugo-profile.netlify.app
-        # badges:
-        #   - "Hugo"
-        #   - "Bootstrap"
-        #   - "Javascript"
+        badges:
+          - "Hugo"
+          - "Bootstrap"
+          - "Javascript"
         links:
           - icon: fa fa-envelope
             url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
@@ -290,9 +328,9 @@ params:
         featured:
           name: Demo
           link: https://django-converter.herokuapp.com
-        # badges:
-        #   - "Django"
-        #   - "Bootstrap"
+        badges:
+          - "Django"
+          - "Bootstrap"
         links:
           - icon: fab fa-github
             url: https://github.com/gurusabarish/converter
@@ -303,10 +341,10 @@ params:
         featured:
           name: Demo V2
           link: https://hugo-profile-2.netlify.app
-        # badges:
-        #   - "Hugo"
-        #   - "Bootstrap"
-        #   - "Javascript"
+        badges:
+          - "Hugo"
+          - "Bootstrap"
+          - "Javascript"
         links:
           - icon: fab fa-github
             url: https://github.com/gurusabarish/HugoProfileV2
@@ -314,15 +352,58 @@ params:
   #Contact
   contact:
     enable: true
+    # title: "Custom Name"
     content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
-    email: gurusabarisha@gmail.com
     btnName: Mail me
+    btnLink: mailto:gurusabarisha@gmail.com
+    # formspree:
+    #   enable: true # `contact.email` value will be ignored
+    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #   emailCaption: "Enter your email address"
+    #   messageCaption: "Enter your message here"
+    #   messageRows: 5
 
   footer:
-    # recentPosts: false
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: true
+      disableFeaturedImage: false
     socialNetworks:
       github: https://github.com
       linkedin: https://linkedin.com
       twitter: https://twitter.com
       instagram: https://instagram.com
       facebook: https://facebook.com
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+  # Single pages like blog and post
+  singlePages:
+    socialShare: true
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+    tags:
+      openInNewTab: true
+
+  # For translations
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
+
+  #customScripts: -| # You can add custom scripts which will be added before </body> tag
+  #  <script type="text/javascript"><!-- any script here --></script>

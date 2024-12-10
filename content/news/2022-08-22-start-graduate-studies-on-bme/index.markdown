@@ -1,12 +1,12 @@
 ---
-title: Start graduate studies at BME
-author: Valentina Roquemen Echeverri
+title: Start graduate studies
+author: Valentina Roquemen-Echeverri
 date: '2022-03-28'
 slug: []
-categories: ["news", "post", "CV", "PhD", "studies"]
-tags: []
+categories: ["education"]
+tags: ["PhD", "education"]
 image: ~
-description: ~
+description: Start graduate studies at BME
 toc: ~
 ---
 
