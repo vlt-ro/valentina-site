@@ -138,7 +138,7 @@ params:
     intro: "Hi, my name is"
     title: "Valentina Roquemen-Echeverri."
     subtitle: ""
-    content: "I am a BME graduate student at OHSU."
+    content: "I am a PhD Candidate at OHSU."
     image: /images/Me.jpg
     bottomImage:
       enable: false
@@ -147,7 +147,7 @@ params:
       enable: true
       name: "Resume"
       url: "/Documents/Resume_Valentina.pdf"
-      download: true
+      download: false
       newPage: true
     socialLinks:
       fontAwesomeIcons:
@@ -156,7 +156,7 @@ params:
         - icon: fab fa-researchgate
           url: https://www.researchgate.net/profile/Valentina-Roquemen-Echeverri
         - icon: fab fa-linkedin
-          url: www.linkedin.com/in/valentina-roquemen-echeverri
+          url: https://www.linkedin.com/in/valentina-roquemen-echeverri
       customIcons:
         #- icon: /research-gate.svg
         #  url: "https://www.researchgate.net/profile/Valentina-Roquemen-Echeverri"
@@ -169,11 +169,11 @@ params:
     title: "About"
     image: "/images/Valentina2024.jpg" #"/images/AboutMe.jpg" #
     content: |-
-      I am a graduate student in the Artificial Intelligence for Medical Systems [(AIMS)](https://www.ohsu.edu/school-of-medicine/jacobs-lab) Lab in the Department of Biomedical Engineering at OHSU. Currently, I am involved in two research projects: heart sound and murmur detection using phonocardiograms, and nocturnal hypoglycemia prediction.
+      I am a PhD candidate in Biomedical Engineering with 3+ years of combined academic and industry experience in algorithms, data science, and machine learning. My expertise lies in signal processing, statistical analysis, and the development of ML models to address complex challenges in healthcare and beyond.
+      
+      I am proficient in using leading tools and frameworks, including Pandas, SciPy, Scikit-learn, TensorFlow, and PyTorch, for developing data-driven solutions and implementing cutting-edge machine learning applications.
 
-      During my Bachelor's degree in Physics, I focused on learning machine learning and data science. Thus, I became passionate about data, which includes visualization, ETL (Extract, transform, load), and modeling. 
-
-      As a Latin American Woman, I feel lucky to be where I am. However, I also feel a great responsibility to turn science into a multicultural space, reducing the gap between those who have access to it.
+      Passionate about bridging the gap between technical concepts and real-world applications.
     skills:
       enable: true
       title: "Here are some programming languages I've been working on:"
@@ -369,7 +369,7 @@ params:
     # title: "Custom Name"
     content: My inbox is always open. I’ll try my best to get back to you!
     btnName: Mail me
-    email: valentina.roquemen@udea.edu.co
+    email: roquemev@ohsu.edu
     
     # formspree:
     #   enable: true # `contact.email` value will be ignored
