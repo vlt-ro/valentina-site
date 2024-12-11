@@ -334,26 +334,53 @@ params:
   # Research
   Research:
     enable: true
+    content: As a graduate researcher in the AIMS Lab, I have contributed to various projects in diabetes and computational cardiology. My responsibilities have included data visualization, model development, and statistical analysis.
     items:
-      - title: Modeling risk of hypoglycemia during and following physical activity in people with type 1 diabetes using explainable mixed-effects machine learning
+      - title: AI-powered diabetes simulation platform
         content: |- 
-          Hypoglycemia risk after the start of PA can be modeled using mixed-effects machine learning to identify key risk factors that may be used within decision support and insulin delivery systems. We published the population-level MERF model online for others to use.
+          The goal of this project is to build an open-source AI-based digital twin generator for replicating personalized glucose dynamics in people with type 1 and type 2 diabetes.
         #image: /images/research/PA-Hypoglycemia_Risk-crop.jpg
         featured:
-          name: Paper
-          link: https://pubmed.ncbi.nlm.nih.gov/36803791/
+          name: Github
+          link: https://github.com/mosqueralopez/T1DSim_AI
+        # badges:
+        #   - "Diabetes"
+        #   - "Hypoglycemia"
+        #   - "t1d"
+          
+      
+      - title: Explainable AI for prediction and prevention of nocturnal hypoglycemia in T1D
+        content: |- 
+          The goal of this project is to develop and evaluate (in a clinical trial) the effect of a personalized machine-learning-based recommender system that analyzes glucose profile and physical activity to predict at bedtime the likelihood of overnight hypoglycemia.
+        #image: /images/research/PA-Hypoglycemia_Risk-crop.jpg
+        featured:
+          name: Read more
+          link: https://academic.oup.com/jamia/article-abstract/31/1/109/7301311
         # badges:
         #   - "Diabetes"
         #   - "Hypoglycemia"
         #   - "t1d"
           
             
-      - title: An AI-Powered Tool for Automatic Heart Sound Quality Assessment and Segmentation
+      - title: Modeling hypoglycemia risk in T1D
         content: |- 
-          Objective: to design an AI-powered tool to automatically assess the quality of phonocardiogram (PCG) recordings, and then identify S1 and S2 heart sounds using PCG recordings only.
+          The goal of this project is to build mixed effects machine learning models to study the effect of different forms of exercise on hypoglycemia risk during and up to 24 hours after physical activity.
         #image: /images/research/PA-Hypoglycemia_Risk-crop.jpg
         featured:
-          name: Paper
+          name: Online hypoglycemia assesment tool
+          link: https://clara.mosqueralopez.com/pahypoglycemiarisk #https://pubmed.ncbi.nlm.nih.gov/36803791/
+        # badges:
+        #   - "Diabetes"
+        #   - "Hypoglycemia"
+        #   - "t1d"
+          
+            
+      - title: Device and algorithms for structural heart disease diagnosis (Telluscope)
+        content: |- 
+          The goal of this project is to build a new AI-powered cardiac auscultation device for improved structural heart murmur diagnosis.
+        #image: /images/research/PA-Hypoglycemia_Risk-crop.jpg
+        featured:
+          name: Read more
           link: https://ieeexplore.ieee.org/document/9669514
         # badges:
         #   - "App"
