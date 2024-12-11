@@ -167,7 +167,7 @@ params:
   about:
     enable: true
     title: "About"
-    image: "/images/Valentina2024.jpg" #"/images/AboutMe.jpg" #
+    image: "/images/AboutMe.jpg" #"/images/Valentina2024.jpg" #
     content: |-
       I am a PhD candidate in Biomedical Engineering with 3+ years of combined academic and industry experience in algorithms, data science, and machine learning. My expertise lies in signal processing, statistical analysis, and the development of ML models to address complex challenges in healthcare and beyond.
       
