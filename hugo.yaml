@@ -138,7 +138,7 @@ params:
     intro: "Hi, my name is"
     title: "Valentina Roquemen-Echeverri."
     subtitle: ""
-    content: "I am a BME graduate student at OHSU."
+    content: "I am a PhD Candidate at OHSU."
     image: /images/Me.jpg
     bottomImage:
       enable: false
@@ -147,7 +147,7 @@ params:
       enable: true
       name: "Resume"
       url: "/Documents/Resume_Valentina.pdf"
-      download: true
+      download: false
       newPage: true
     socialLinks:
       fontAwesomeIcons:
@@ -156,7 +156,7 @@ params:
         - icon: fab fa-researchgate
           url: https://www.researchgate.net/profile/Valentina-Roquemen-Echeverri
         - icon: fab fa-linkedin
-          url: www.linkedin.com/in/valentina-roquemen-echeverri
+          url: https://www.linkedin.com/in/valentina-roquemen-echeverri
       customIcons:
         #- icon: /research-gate.svg
         #  url: "https://www.researchgate.net/profile/Valentina-Roquemen-Echeverri"
